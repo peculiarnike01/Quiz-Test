@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chem.css">
+    <link rel="icon" href="images/Quizpro.png">
+</head>
+<body>
+    
+<nav class="navbar" id="navBar">
+
+        <img src="images/Quizpro.png" alt="Quizpro Logo" class="logo">
+        <ul class="nav-links" id="navLinks">
+            <li><a href="maths.html" data-subject="Mathematics">Mathematics</a></li>
+            <li><a href="eng.html" data-subject="English">English</a></li>
+            <li><a href="bio.html" data-subject="Biology">Biology</a></li>
+            <li><a href="chem.html" data-subject="Chemistry">Chemistry</a></li>
+        </ul>
+    </nav>
+
+    <header class="quiz-header">
+
+        <div class="timer">
+            <span>⏱️</span>
+
+            <div>
+                <small>TIME LEFT</small>
+                <h3 id="timer">05:00</h3>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- QUIZ CONTAINER -->
+    <main id="quiz-container">
+        <h1 id="subject-title">CHEMISTRY</h1>
+
+        <p class="subtitle">Test your knowledge</p>
+
+        <div class="question-info">
+            <span id="question-number">QUESTION 1 OF 10</span>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+
+        <!-- QUESTION -->
+        <div id="question-container">
+            <p id="question">Question goes here</p>
+        </div>
+
+        <h3 id="question-text"></h3>
+
+        <!-- OPTIONS -->
+        <div id="options">
+            <!-- Options wiil be inserted dynamically -->
+        </div>
+
+        <button id="submit-btn">Submit Answer</button>
+        <p id="result"></p>
+    </main>
+
+
+
+    <script src="chem.js"></script>
+</body>
+</html>
